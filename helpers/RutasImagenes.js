@@ -1,7 +1,17 @@
 
 const data=[
     {
-        nombreItem: "Cupcake",
+        nombreItem: "Cafes",
+        img_url: require('../assets/cafe.png'),
+        priceItem: "1000"
+    },
+    {
+        nombreItem: "Bebidas",
+        img_url: require('../assets/bebidas.png'),
+        priceItem: "1000"
+    },
+    {
+        nombreItem: "Cupcakes",
         img_url: require('../assets/cupcake.png'),
         priceItem: "1000"
     },
@@ -11,34 +21,29 @@ const data=[
         priceItem: "2000"
     },
     {
-        nombreItem: "Cupcake2",
-        img_url: require('../assets/cupcake.png'),
+        nombreItem: "Tortas",
+        img_url: require('../assets/tortas.png'),
         priceItem: "1000"
     },
     {
-        nombreItem: "Celestinos2",
-        img_url: require('../assets/panqueques.png'),
+        nombreItem: "Torta Yogurth",
+        img_url: require('../assets/torta_yogurt.png'),
         priceItem: "2500"
     }, 
     {
-        nombreItem: "Cupcake3",
-        img_url: require('../assets/cupcake.png'),
+        nombreItem: "Kuchen",
+        img_url: require('../assets/kuchen.png'),
         priceItem: "1450"
     },
     {
-        nombreItem: "Celestinos3",
-        img_url: require('../assets/panqueques.png'),
+        nombreItem: "Pie de limón",
+        img_url: require('../assets/pie_limon.png'),
         priceItem: "2000"
     },
     {
-        nombreItem: "Cupcake4",
-        img_url: require('../assets/cupcake.png'),
+        nombreItem: "Sandwich aliado",
+        img_url: require('../assets/sandwich-aliado.png'),
         priceItem: "1000"
-    },
-    {
-        nombreItem: "Celestinos4",
-        img_url: require('../assets/panqueques.png'),
-        priceItem: "2000"
     },
 ]
 

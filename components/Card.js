@@ -34,18 +34,23 @@ const Card = ({imgSource,nameItem,priceItem,total,setTotal,clearAll,setClearAll}
 
     return (
         <View className="flex-row"> 
-                <View className="justify-center items-center p-3 w-32 min-w-min">
-                    <Text className="font-bold">{count} {nameItem}</Text>
-                    <Text className="">{totalElemento}</Text>
+                {/* Info sobre el producto unitario */}
+                <View className="justify-center p-3 w-32 min-w-min">
+                    <View className="flex flex-row space-x-3 ">
+                        <Text className="font-bold">{count}</Text>
+                        <Text className="font-bold text-center">{nameItem}</Text>
+                    </View>
+                    <Text className="text-center ">{totalElemento}</Text>
                 </View>
+                {/* Imagen del producto unitario cards */}
                 <TouchableOpacity className="w-28 p-2 ml-2 mt-2 items-center rounded-lg shadow-lg bg-green-100" onPress={()=>{handlePrice('add')}}>
-                    <Image source={imgSource} className="w-14 h-14 "/>
-                    <Text className="font-bold">{nameItem}</Text>
+                    <Image source={imgSource} resizeMode="contain" className="w-14 h-14 "/>
+                    <Text className="font-bold text-center">{nameItem}</Text>
                     <Text className="font-extralight w-3/4 text-center rounded bg-green-50">{priceItem}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity className="w-28 p-2 ml-2 mt-2 items-center rounded-lg shadow-lg bg-red-100" onPress={()=>{handlePrice('sub')}}>
-                    <Image source={imgSource} className="w-14 h-14 "/>
-                    <Text className="font-bold">{nameItem}</Text>
+                    <Image source={imgSource} resizeMode="contain" className="w-14 h-14 "/>
+                    <Text className="font-bold text-center">{nameItem}</Text>
                     <Text className="font-extralight w-3/4 text-center rounded bg-red-50">{priceItem}</Text>
 
                 </TouchableOpacity>
