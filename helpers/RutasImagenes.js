@@ -75,6 +75,11 @@ const data=[
         img_url: require('../assets/sandwich-aliado.png'),
         priceItem: "1200"
     },
+    {
+        nombreItem: "Pizza indiv",
+        img_url: require('../assets/pizza.png'),
+        priceItem: "1500"
+    },
 ]
 
 export default data;
